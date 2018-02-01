@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+
+body{
+	background-image: url("http://www.esa.int/var/esa/storage/images/esa_multimedia/images/2017/04/two_million_stars_in_our_galaxy/16899659-1-eng-GB/Two_million_stars_in_our_Galaxy.jpg") , url(https://www.overdriveonline.com/wp-content/uploads/sites/8/2012/10/Cute-green-alien.jpg);  <!--background-->
+	background-position: center fixed, right bottom;
+    background-repeat: no-repeat, repeat;
+}
+  
+ #a{
+	color:lightblue;  <!-- for login -->
+	font-family:courier; 
+	font-size: 400%;
+} 
+.b{
+	font-size: 200%; <!-- for name and password fields and login button -->
+}
+  .c{
+	color:white;
+	font-family:courier; 
+	font-size:150%;  <!-- for name and password-->
+}
+
+ul {                
+    list-style-type: none;
+    margin:0;
+    padding:10px;
+    background-color:lightblue;  <!-- unordered list of home,news, contact and about -->
+    overflow: hidden;
+    }
+ 
+
+
+
+li {
+    float:left;    <!-- topmost menu bar-->
+}
+.mainmenu {
+    display:inline;
+    color: blue;
+    border:none;
+    text-align: center;
+    padding: 100px 100px;
+    text-decoration: none;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b4b4b4;
+    min-width: 300px;
+    padding: 15px 32px;
+    
+    z-index: 1;
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+  
+  </style>
+
+           </head>
+
+<body>
+
+
+<ul class="navbar"> 
+
+<div class="dropdown">
+  <span><li><a class="mainmenu" href="">Home</a></li></span>
+     <div class="dropdown-content">
+  <li><a class="mainmenu ">Link 1</a></li>
+<li><a class="mainmenu ">Link 2</a></li>
+<li><a class="mainmenu ">Link 3</a></li>
+
+  </div>
+ 
+</div>
+
+<div class="dropdown">
+  <span><li><a class="mainmenu" href="#news">News</a></li></span>
+     <div class="dropdown-content">
+  <li><a class="mainmenu" href="#">Link 1</a></li>
+<li><a class="mainmenu" href="#">Link 2</a></li>
+<li><a class="mainmenu" href="#">Link 3</a></li>
+
+  </div>
+ 
+</div>
+
+<div class="dropdown">
+  <span><li><a class="mainmenu" href="#home">Contact</a></li></span>
+     <div class="dropdown-content">
+  <li><a class="mainmenu" href="#">Link 1</a></li>
+<li><a class="mainmenu" href="#">Link 2</a></li>
+<li><a class="mainmenu" href="#">Link 3</a></li>
+
+  </div>
+ 
+</div>
+
+<div class="dropdown">
+  <span><li><a class="mainmenu" href="#home">About</a></li></span>
+     <div class="dropdown-content">
+  <li><a class="mainmenu" href="#">Link 1</a></li>
+<li><a class="mainmenu" href="#">Link 2</a></li>
+<li><a class="mainmenu" href="#">Link 3</a></li>
+
+  </div>
+ 
+</div>
+
+</ul
+
+
+
+<div id="main">
+<form>
+     
+       
+		<h1 id="a">LOG IN </h1 >
+         <p class="c">NAME: </p><br>
+         <input class="b" type="text" name=""> 
+         <br>
+         <p class="c">PASSWORD:</p><br>
+         <input class="b"type="password" name="password">
+         <br>
+         <br>
+        <input class="b" type="button" value="LOGIN">
+       
+    </form>
+ </div>
+
+</body>
+</html>
